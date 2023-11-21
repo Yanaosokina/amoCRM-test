@@ -1,0 +1,53 @@
+.app {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 259px;
+    height: 259px;
+    border-radius: 259px;
+    opacity: 0.5;
+    background: #833ab4;
+    filter: blur(196px);
+    top: -33px;
+    left: 600px;
+    bottom: 0;
+
+    @media (max-width: 360px) {
+      display: none;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961a1a;
+    filter: blur(196px);
+    width: 311px;
+    height: 311px;
+    flex-shrink: 0;
+    top: 290px;
+    left: -101px;
+  }
+
+   &__purple-ball{
+    position: absolute;
+    top: 0;
+    left: 854px;
+  }
+
+  &__red-ball{
+    position: absolute;
+    top: 72px;
+    left: 505px;
+  }
+
+  &__small-red-ball {
+    position: absolute;
+    top: 536px;
+    left: 835px;
+  }
+}
